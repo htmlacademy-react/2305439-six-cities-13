@@ -1,4 +1,3 @@
-
 import Card from '../card/card';
 import { BlockName } from '../../const';
 import { typeOffersList } from '../../types/type_offers';
@@ -20,11 +19,13 @@ function CardList({ block, offersList, onListCardHover }: CardListProps) {
           title={item.title}
           type={item.type}
           price={item.price}
-          previewImage={item.image}
+          image={item.image }
           isPremium={item.isPremium}
           rating={item.rating}
           block={block}
-          onListCardHover={onListCardHover}/>))}
+          onListCardHover={onListCardHover}
+        />
+      ))}
     </div>
   );
 }
